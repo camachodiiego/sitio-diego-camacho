@@ -1,10 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  serverExternalPackages: ['@netlify/blobs'],
-  images: {
-    domains: [],
-    unoptimized: true,
-  },
+  experimental: { serverComponentsExternalPackages: ['@netlify/blobs'] },
+  images: { unoptimized: true },
 }
-
 module.exports = nextConfig
