@@ -1,5 +1,5 @@
 import { getServerSession } from 'next-auth'
-import { authOptions } from '../../api/auth/[...nextauth]/route'
+import { authOptions } from '@/lib/auth'
 import { FileText, Image, Settings, Globe } from 'lucide-react'
 import Link from 'next/link'
 
